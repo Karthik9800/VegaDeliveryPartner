@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const licenseUploadScreen = () => {
+const LicenseUploadScreen = () => {
   return (
     <View>
-      <Text>licenseUploadScreen</Text>
+      <Text>LicenseUploadScreen</Text>
     </View>
   )
 }
 
-export default licenseUploadScreen
+export default LicenseUploadScreen

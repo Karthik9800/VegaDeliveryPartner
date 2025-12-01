@@ -1,14 +1,14 @@
 import { View, Text,TouchableOpacity } from 'react-native'
 import React from 'react'
-import appPermissionScreen from './appPermissionScreen'
+import AppPermissionScreen from './AppPermissionScreen'
 
-const loginVerifyScreen = ({navigation}) => {
+const LoginVerifyScreen = ({navigation}) => {
   return (
     <View style={{flex:1,backgroundColor:"black"}}>
           
           <View style={{margin:70}}>
-          <Text style={{color:'white'}}>loginVerifyScreen</Text>
-          <TouchableOpacity onPress={()=>navigation.navigate(appPermissionScreen)}>
+          <Text style={{color:'white'}}>LoginVerifyScreen</Text>
+          <TouchableOpacity onPress={()=>navigation.navigate(AppPermissionScreen)}>
             <Text style={{color:"white"}}>Next</Text>
           </TouchableOpacity>
         
@@ -16,4 +16,4 @@ const loginVerifyScreen = ({navigation}) => {
   )
 }
 
-export default loginVerifyScreen
+export default LoginVerifyScreen
