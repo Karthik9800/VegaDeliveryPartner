@@ -1,16 +1,16 @@
 import { View, Text ,StatusBar, TouchableOpacity} from 'react-native'
 import React from 'react'
-import loginEntryScreen from './loginEntryScreen'
+import LoginEntryScreen from './LoginEntryScreen'
 
 
-const onBoardingScreen = ({navigation}) => {
+const OnBoardingScreen = ({navigation}) => {
   return (
     
     <View style={{flex:1,backgroundColor:"black"}}>
       <StatusBar barStyle={'light-content'}/>
       <View style={{margin:70}}>
-      <Text style={{color:'white'}}>onBoardingScreen1</Text>
-      <TouchableOpacity onPress={()=>navigation.navigate(loginEntryScreen)}>
+      <Text style={{color:'white'}}>OnBoardingScreen1</Text>
+      <TouchableOpacity onPress={()=>navigation.navigate(LoginEntryScreen)}>
         <Text style={{color:"white"}}>Next</Text>
       </TouchableOpacity>
     
@@ -18,4 +18,4 @@ const onBoardingScreen = ({navigation}) => {
   )
 }
 
-export default onBoardingScreen
+export default OnBoardingScreen

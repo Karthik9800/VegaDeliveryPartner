@@ -1,63 +1,63 @@
 import { View, Text, StatusBar } from 'react-native';
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import onBoardingScreen from '../screens/onboarding/onBoardingScreen';
-import loginEntryScreen from '../screens/onboarding/loginEntryScreen';
-import loginVerifyScreen from '../screens/onboarding/loginVerifyScreen';
-import appPermissionScreen from '../screens/onboarding/appPermissionScreen';
-import locationSelectionScreen from '../screens/onboarding/locationSelectionScreen';
+import OnBoardingScreen from '../screens/onboarding/OnBoardingScreen';
+import LoginEntryScreen from '../screens/onboarding/LoginEntryScreen';
+import LoginVerifyScreen from '../screens/onboarding/LoginVerifyScreen';
+import AppPermissionScreen from '../screens/onboarding/AppPermissionScreen';
+import LocationSelectionScreen from '../screens/onboarding/LocationSelectionScreen';
 import VehicleSelectionScreen from '../screens/onboarding/VehicleSelectionScreen';
-import personalInfoScreen from '../screens/onboarding/personalInfoScreen';
-import faceInstructionScreen from '../screens/onboarding/faceInstructionScreen';
-import faceVerificationScreen from '../screens/onboarding/faceVerificationScreen';
-import documentVerifyScreen from '../screens/onboarding/documentVerifyScreen';
-import aadharEntryScreen from '../screens/onboarding/aadharEntryScreen';
-import aadharVerifyScreen from '../screens/onboarding/aadharVerifyScreen';
-import panUploadScreen from '../screens/onboarding/panUploadScreen';
-import licenseUploadScreen from '../screens/onboarding/licenseUploadScreen';
+import PersonalInfoScreen from '../screens/onboarding/PersonalInfoScreen';
+import FaceInstructionScreen from '../screens/onboarding/FaceInstructionScreen';
+import FaceVerificationScreen from '../screens/onboarding/FaceVerificationScreen';
+import DocumentVerifyScreen from '../screens/onboarding/DocumentVerifyScreen';
+import AadharEntryScreen from '../screens/onboarding/AadharEntryScreen';
+import AadharVerifyScreen from '../screens/onboarding/AadharVerifyScreen';
+import PanUploadScreen from '../screens/onboarding/PanUploadScreen';
+import LicenseUploadScreen from '../screens/onboarding/LicenseUploadScreen';
 import ProcessingVerificationScreen from '../screens/onboarding/ProcessingVerificationScreen';
 const Stack = createNativeStackNavigator();
 const AppNavigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{ headerShown: false, statusBarStyle: 'light' }}
-      initialRouteName="onBoardingScreen"
+      initialRouteName="OnBoardingScreen"
     >
       {/* <Stack.Screen name="Splash" component={SplashScreen} /> */}
-      <Stack.Screen name="onBoardingScreen" component={onBoardingScreen} />
-      <Stack.Screen name="loginEntryScreen" component={loginEntryScreen} />
-      <Stack.Screen name="loginVerifyScreen" component={loginVerifyScreen} />
+      <Stack.Screen name="OnBoardingScreen" component={OnBoardingScreen} />
+      <Stack.Screen name="LoginEntryScreen" component={LoginEntryScreen} />
+      <Stack.Screen name="LoginVerifyScreen" component={LoginVerifyScreen} />
       <Stack.Screen
-        name="appPermissionScreen"
-        component={appPermissionScreen}
+        name="AppPermissionScreen"
+        component={AppPermissionScreen}
       />
       <Stack.Screen
-        name="locationSelectionScreen"
-        component={locationSelectionScreen}
+        name="LocationSelectionScreen"
+        component={LocationSelectionScreen}
       />
       <Stack.Screen
         name="VehicleSelectionScreen"
         component={VehicleSelectionScreen}
       />
-      <Stack.Screen name="personalInfoScreen" component={personalInfoScreen} />
+      <Stack.Screen name="PersonalInfoScreen" component={PersonalInfoScreen} />
       <Stack.Screen
-        name="faceInstructionScreen"
-        component={faceInstructionScreen}
+        name="FaceInstructionScreen"
+        component={FaceInstructionScreen}
       />
       <Stack.Screen
-        name="faceVerificationScreen"
-        component={faceVerificationScreen}
+        name="FaceVerificationScreen"
+        component={FaceVerificationScreen}
       />
       <Stack.Screen
-        name="documentVerifyScreen"
-        component={documentVerifyScreen}
+        name="DocumentVerifyScreen"
+        component={DocumentVerifyScreen}
       />
-      <Stack.Screen name="aadharEntryScreen" component={aadharEntryScreen} />
-      <Stack.Screen name="aadharVerifyScreen" component={aadharVerifyScreen} />
-      <Stack.Screen name="panUploadScreen" component={panUploadScreen} />
+      <Stack.Screen name="AadharEntryScreen" component={AadharEntryScreen} />
+      <Stack.Screen name="AadharVerifyScreen" component={AadharVerifyScreen} />
+      <Stack.Screen name="PanUploadScreen" component={PanUploadScreen} />
       <Stack.Screen
-        name="licenseUploadScreen"
-        component={licenseUploadScreen}
+        name="LicenseUploadScreen"
+        component={LicenseUploadScreen}
       />
       <Stack.Screen
         name="ProcessingVerificationScreen"

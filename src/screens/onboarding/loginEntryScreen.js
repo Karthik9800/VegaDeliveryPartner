@@ -1,14 +1,14 @@
 import { View, Text,TouchableOpacity } from 'react-native'
 import React from 'react'
-import loginVerifyScreen from './loginVerifyScreen'
+import LoginVerifyScreen from './LoginVerifyScreen'
 
-const loginEntryScreen = ({navigation}) => {
+const LoginEntryScreen = ({navigation}) => {
   return (
     <View style={{flex:1,backgroundColor:"black"}}>
           
           <View style={{margin:70}}>
-          <Text style={{color:'white'}}>loginEntryScreen</Text>
-          <TouchableOpacity onPress={()=>navigation.navigate(loginVerifyScreen)}>
+          <Text style={{color:'white'}}>LoginEntryScreen</Text>
+          <TouchableOpacity onPress={()=>navigation.navigate(LoginVerifyScreen)}>
             <Text style={{color:"white"}}>Next</Text>
           </TouchableOpacity>
         
@@ -16,4 +16,4 @@ const loginEntryScreen = ({navigation}) => {
   )
 }
 
-export default loginEntryScreen
+export default LoginEntryScreen

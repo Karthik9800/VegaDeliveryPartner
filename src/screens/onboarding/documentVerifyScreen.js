@@ -1,25 +1,25 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
-import aadharEntryScreen from './aadharEntryScreen';
+import AadharEntryScreen from './AadharEntryScreen';
 import processingVerificationScreen from './ProcessingVerificationScreen';
-import panUploadScreen from './panUploadScreen';
-import licenseUploadScreen from './licenseUploadScreen';
+import PanUploadScreen from './PanUploadScreen';
+import LicenseUploadScreen from './LicenseUploadScreen';
 
-const documentVerifyScreen = ({ navigation }) => {
+const DocumentVerifyScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, backgroundColor: 'black' }}>
       <View style={{ margin: 70 }}>
-        <Text style={{ color: 'white' }}>documentVerifyScreen</Text>
+        <Text style={{ color: 'white' }}>DocumentVerifyScreen</Text>
         <TouchableOpacity
-          onPress={() => navigation.navigate(aadharEntryScreen)}
+          onPress={() => navigation.navigate(AadharEntryScreen)}
         >
           <Text style={{ color: 'white' }}>A</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate(panUploadScreen)}>
+        <TouchableOpacity onPress={() => navigation.navigate(PanUploadScreen)}>
           <Text style={{ color: 'white' }}>P</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => navigation.navigate(licenseUploadScreen)}
+          onPress={() => navigation.navigate(LicenseUploadScreen)}
         >
           <Text style={{ color: 'white' }}>L</Text>
         </TouchableOpacity>
@@ -33,4 +33,4 @@ const documentVerifyScreen = ({ navigation }) => {
   );
 };
 
-export default documentVerifyScreen;
+export default DocumentVerifyScreen;

@@ -1,14 +1,14 @@
 import { View, Text ,TouchableOpacity} from 'react-native'
 import React from 'react'
-import locationSelectionScreen from './locationSelectionScreen'
+import LocationSelectionScreen from './LocationSelectionScreen'
 
-const appPermissionScreen = ({navigation}) => {
+const AppPermissionScreen = ({navigation}) => {
   return (
     <View style={{flex:1,backgroundColor:"black"}}>
           
           <View style={{margin:70}}>
-          <Text style={{color:'white'}}>appPermissionScreen</Text>
-          <TouchableOpacity onPress={()=>navigation.navigate(locationSelectionScreen)}>
+          <Text style={{color:'white'}}>AppPermissionScreen</Text>
+          <TouchableOpacity onPress={()=>navigation.navigate(LocationSelectionScreen)}>
             <Text style={{color:"white"}}>Next</Text>
           </TouchableOpacity>
         
@@ -16,4 +16,4 @@ const appPermissionScreen = ({navigation}) => {
   )
 }
 
-export default appPermissionScreen
+export default AppPermissionScreen

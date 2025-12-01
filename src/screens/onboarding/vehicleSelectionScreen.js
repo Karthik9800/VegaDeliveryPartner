@@ -77,7 +77,7 @@ const VehicleSelectionScreen = ({ navigation }) => {
         >
           <PrimaryButton
             title="Submit"
-            onPress={() => navigation.navigate('personalInfoScreen')}
+            onPress={() => navigation.navigate('PersonalInfoScreen')}
             bgColor="#00B5CC"
             textColor="#fff"
           />
