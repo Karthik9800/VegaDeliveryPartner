@@ -1,19 +1,49 @@
-import { View, Text ,TouchableOpacity} from 'react-native'
-import React from 'react'
-import onBoardingScreen from './onBoardingScreen'
+import React from 'react';
+import { View, Text, Image, StyleSheet } from 'react-native';
+import {
+  responsiveWidth,
+  responsiveHeight,
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
 
-const processingVerificationScreen = ({navigation}) => {
+const ProcessingVerificationScreen = () => {
   return (
-    <View style={{flex:1,backgroundColor:"black"}}>
-          
-          <View style={{margin:70}}>
-          <Text style={{color:'white'}}>processingVerificationScreen</Text>
-          <TouchableOpacity onPress={()=>navigation.navigate(onBoardingScreen)}>
-            <Text style={{color:"white"}}>Next</Text>
-          </TouchableOpacity>
-        
-        </View></View>
-  )
-}
+    <View style={styles.container}>
+      <Image
+        source={require('../../assets/images/Notify.png')}
+        style={styles.image}
+      />
+      <Text style={styles.text}>
+        We will notify Once the Verification is{'\n'}
+        successfully completed
+      </Text>
+    </View>
+  );
+};
 
-export default processingVerificationScreen
+export default ProcessingVerificationScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: responsiveWidth(5),
+  },
+
+  image: {
+    width: responsiveWidth(70), // responsive width
+    height: responsiveHeight(35), // responsive height
+    resizeMode: 'contain',
+    marginBottom: responsiveHeight(3),
+  },
+
+  text: {
+    fontSize: responsiveFontSize(2.2),
+    fontWeight: '500',
+    color: '#000',
+    textAlign: 'center',
+    lineHeight: responsiveHeight(3),
+  },
+});
