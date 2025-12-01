@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const PanUploadScreen = () => {
+const panUploadScreen = () => {
   return (
     <View>
-      <Text>PanUploadScreen</Text>
+      <Text>panUploadScreen</Text>
     </View>
   )
 }
 
-export default PanUploadScreen
+export default panUploadScreen

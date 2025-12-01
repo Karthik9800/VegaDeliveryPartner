@@ -1,14 +1,14 @@
 import { View, Text ,TouchableOpacity} from 'react-native'
 import React from 'react'
-import PersonalInfoScreen from './PersonalInfoScreen'
+import personalInfoScreen from './personalInfoScreen'
 
-const LocationSelectionScreen = ({navigation}) => {
+const locationSelectionScreen = ({navigation}) => {
   return (
     <View style={{flex:1,backgroundColor:"black"}}>
           
           <View style={{margin:70}}>
           <Text style={{color:'white'}}>city</Text>
-          <TouchableOpacity onPress={()=>navigation.navigate(PersonalInfoScreen)}>
+          <TouchableOpacity onPress={()=>navigation.navigate(personalInfoScreen)}>
             <Text style={{color:"white"}}>Next</Text>
           </TouchableOpacity>
         
@@ -16,4 +16,4 @@ const LocationSelectionScreen = ({navigation}) => {
   )
 }
 
-export default LocationSelectionScreen
+export default locationSelectionScreen

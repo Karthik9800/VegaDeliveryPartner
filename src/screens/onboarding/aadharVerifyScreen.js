@@ -1,14 +1,14 @@
 import { View, Text ,TouchableOpacity} from 'react-native'
 import React from 'react'
-import DocumentVerifyScreen from './DocumentVerifyScreen'
+import documentVerifyScreen from './documentVerifyScreen'
 
-const AadharVerifyScreen = ({navigation}) => {
+const aadharVerifyScreen = ({navigation}) => {
   return (
     <View style={{flex:1,backgroundColor:"black"}}>
           
           <View style={{margin:70}}>
           <Text style={{color:'white'}}>aadharV</Text>
-          <TouchableOpacity onPress={()=>navigation.navigate(DocumentVerifyScreen)}>
+          <TouchableOpacity onPress={()=>navigation.navigate(documentVerifyScreen)}>
             <Text style={{color:"white"}}>Next</Text>
           </TouchableOpacity>
         
@@ -16,4 +16,4 @@ const AadharVerifyScreen = ({navigation}) => {
   )
 }
 
-export default AadharVerifyScreen
+export default aadharVerifyScreen
